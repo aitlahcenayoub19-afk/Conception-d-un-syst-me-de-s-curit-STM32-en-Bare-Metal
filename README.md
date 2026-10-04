@@ -12,15 +12,8 @@ Système de contrôle d'accès par code à 6 chiffres, réalisé **entièrement 
    - **Code erroné** : LED rouge, buzzer et message `CODE ERRONE !` sur le LCD.
 4. Le système revient à l'état initial :
    - automatiquement après **4 secondes** (interruption du Timer 2),
-   - ou **immédiatement** avec le bouton de reset (interruption externe EXTI sur PB7).
+   - ou **immédiatement** avec le bouton de reset (interruption externe EXTI sur PB7) qui efface le LCD et eteint les LED avant que le TIMER2 .
 
-```mermaid
-stateDiagram-v2
-    [*] --> Saisie
-    Saisie --> Saisie: touche (chiffre < 6)
-    Saisie --> Resultat: 6e chiffre
-    Resultat --> Saisie: Timer 2 (4 s) ou bouton reset
-```
 
 ## Matériel
 
