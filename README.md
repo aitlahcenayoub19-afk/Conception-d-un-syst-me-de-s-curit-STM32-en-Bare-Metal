@@ -2,9 +2,6 @@
 
 Système de contrôle d'accès par code à 6 chiffres, réalisé **entièrement en bare metal** sur un STM32F103C6 : ni HAL, ni bibliothèque, seul `#include <stdint.h>` est utilisé. Tous les registres (RCC, GPIO, AFIO, EXTI, TIM2, SysTick, NVIC) sont définis et configurés à la main.
 
-## Démonstration
-
-<!-- Glisse ta vidéo .mp4 ici dans l'éditeur GitHub : le lien sera ajouté automatiquement -->
 
 ## Fonctionnement
 
@@ -100,12 +97,7 @@ README.md     Ce fichier
 
 Le fichier de démarrage et le linker script sont ceux générés par STM32CubeIDE.
 
-## Améliorations possibles
 
-- Limiter le nombre d'essais avec blocage temporaire
-- Code modifiable, sauvegardé en Flash
-- Clavier géré par interruptions au lieu du balayage
-- Remplacer les boucles d'attente par des interruptions SysTick
 
 ## Auteur
 
